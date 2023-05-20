@@ -1,0 +1,636 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); /* Roboto*/
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap'); /*'Open Sans', sans-serif;*/
+  
+  
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+
+body{
+    background-color:white;
+}
+
+
+/*.banner{
+    background-color: #00743f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0px 140px 0 80px ;
+    height: 10vh;
+    
+    
+}
+
+.loog img{
+    height: 40px;
+}
+
+
+.fatai{
+    width: 60%;
+    height:6vh;
+    margin:auto;
+}
+
+.fatai form  {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.fatai form input[type=text] {
+    width: 100%;
+    height: 40px;
+    padding: 1px 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    transition: 0.5s;
+    outline: none;
+  }
+
+  input[type=text]:focus {
+    border: 3px solid  #ccc;
+  }
+
+  .button{
+    width: 15%;
+    height: 40px;
+    background-color: #323232;
+    color: white;
+    padding: 10px 10px ;
+    text-transform: uppercase;
+    font-size: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: 700;
+  }
+
+nav ul{
+    display: flex;
+    
+}
+
+nav ul li{
+    padding: 0px 10px;
+    color: white;
+    font-family: "Roboto";
+    font-weight: 400;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 11px;
+}
+
+nav ul li a:hover{
+  color: white;
+}
+
+nav ul li a span{
+    font-weight: 700;
+
+}
+
+nav ul li i{
+    font-size:9px;
+    padding: 0 0 0 3px;   
+}
+
+.sublist{
+    display:none;
+}
+
+
+nav ul li:hover .sublist{ 
+    display:block;
+    position: absolute;
+    left: 90;
+    top:53px;
+    background-color:#00743f;
+}
+
+nav ul li:hover .sublist ul{
+    display: block;
+  
+}
+
+nav ul li:hover .sublist ul li{
+    width: 100%;
+    padding: 10px 40px 10px 10px;
+    text-transform: capitalize;
+}
+
+nav ul li:hover .sublist ul li a{
+    color:white;
+    font-size: 12px;
+    padding: 5px 10px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav ul li:hover .sublist ul li a:hover{
+    color: black;
+    font-weight: light;
+}
+
+
+.content{
+    display:none;
+}
+
+nav ul li:hover .content {
+    display: block;
+    position: absolute;
+    background-color:#00743f;
+    top: 50px;
+    right:95px;
+    padding: 30px 30px 15px ;
+}
+
+nav ul li:hover .content button{
+    color:white;
+    background-color:#040303;
+    text-align: center;
+    padding: 7px 40px;
+    font-size: 13px;
+    font-family: "roboto";
+    font-weight: 700;
+    border: none;
+}
+
+nav ul li:hover .content button:hover{
+    background-color:#363636;
+}
+nav ul li:hover .content p{
+    padding-top: 15px;
+    font-size: 10px;
+}
+
+nav ul li:hover .content p a{
+    font-size:12px;
+    font-family: "open sans";
+    font-weight: 400;
+    text-decoration:underline;
+}
+
+#cart img{
+    height: 56px;
+    color: white;
+    position: absolute;
+    top:13px;
+    right: 95px;
+    color: white;
+}
+
+#cart  span{
+    position: absolute;
+    top: 37px;
+    right: 85px;
+    text-decoration:none;
+    color: white; 
+    font-family:"roboto" ;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+*/
+.about{
+    z-index: 999;
+    margin: 0px 100px ;
+    text-align: justify;
+}
+
+
+.topic{
+      text-align: center;
+      padding-top: 30px;
+
+}
+
+
+.topic a {
+    text-decoration: none;
+    color: #00743f;
+    padding: 0px 10px ;
+    font-size: 15px;
+    font-family: "Roboto";
+    font-weight: 700;
+}
+
+.topic a:hover{
+    text-decoration: underline;
+}
+
+.topic span{
+    padding-left: 20px;
+}
+
+
+.about p{
+    text-align: center;
+    font-size: 40px;
+    font-family: "roboto";
+    font-weight: 700;
+    color: #00743f;
+}
+
+.overview{
+    background-color: rgb(249, 249, 249);
+    box-shadow: 1px 8px 16px 1px rgba(0,0,0,0.2);
+    padding: 30px 60px;
+    text-align: justify;
+    display: flex;
+    margin: 25px 100px 0;
+    justify-content: space-between;
+}
+
+.over p{
+    padding-top: 15px;
+   font-size: 13px;
+   width: 500px;
+   line-height: 25px;
+   font-family: "open sans";
+   font-weight: 700;
+
+}
+
+.over img{
+   height: 150px;
+}
+
+
+.cell{
+    padding: 0 90px;
+    display: flex;
+    justify-content: space-between;
+    margin:80px 100px;
+ }
+ 
+ #cell-text{
+     text-align: center;
+ }
+
+ 
+ #cell-text i{
+     color: #00743f;
+     font-size: 40px;
+     padding: 15px;
+     border: 3px solid #00743f;
+     border-radius: 100px;
+ }
+ 
+ #cell-text p{
+     margin-top: 15px;
+     font-size: 13px;
+     width:180px;
+     line-height: 20px;
+     font-family: "open sans";
+     font-weight: 400;
+ }
+
+
+.vision{
+     margin: 10px 100px;
+     display: flex;
+     height: 45vh;
+ }
+ 
+ #vision{
+    padding: 0;
+    margin-top: 50px;
+    text-align: center;
+ }
+
+
+ #vision p{
+    align-items: center;
+    color: #00743f;
+    font-size: 25px;
+    font-family: "roboto";
+    font-weight: 700;
+  
+  
+ }
+ 
+ #vision-text{
+
+      text-align: center;
+      width: 100%;
+      background-image:linear-gradient( rgba(0,0,0, 0.5), rgba(0.0.0, 0.5)), url(./images/img\ 4.jpeg);
+      background-size: cover;
+      background-repeat: no-repeat;
+ }
+ 
+ 
+ 
+ #vision-text h3{
+     color: white;
+     font-size: 15px;
+     font-family: "roboto";
+ 
+ }
+ 
+ #vision-text p{
+     color: white;
+     padding-top: 15px;
+     font-size: 12px;
+     font-weight: lighter;
+     font-family: "roboto";
+ }
+
+ 
+
+
+ .categories{
+    padding: 0;
+    margin-top: 80px;
+    text-align: center;
+ }
+
+
+ .categories p{
+   
+    align-items: center;
+    color: #00743f;
+    font-size: 25px;
+    font-family: "roboto";
+    font-weight: 700;
+  
+  
+ }
+
+ .cate{
+    
+    padding: 0 90px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 10px 100px;
+ 
+ }
+ 
+
+ #cate-text{
+     padding: 20px 0;
+ }
+
+
+ #cate-text i{
+    color: #00743f;
+    font-size: 30px;
+    padding: 15px;
+    border: 3px solid #00743f;
+    border-radius: 100px;
+ }
+
+ #cate-text h2{
+    padding-top:15px ;
+    font-size: 15px;
+    font-family: "open sans";
+    font-weight: 700;
+    
+ }
+
+ #cate-text p{
+    color: black;
+    margin-top: 15px;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: "open sans";
+    font-weight: 400;
+    
+}
+
+/*leaders*/
+
+.Excos{
+    background-color: rgb(249, 249, 249);
+    box-shadow: 1px 1px 16px 1px rgba(0,0,0,0.2);
+    padding: 30px 60px;
+    text-align: justify;
+    display: flex;
+    margin: 70px 100px ;
+    justify-content: space-between;
+}
+
+.teamA{
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .leaders h3{
+    color: #00743f;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Roboto";
+    font-weight: 700;
+    
+ }
+
+
+ #team-text{
+    padding: 0 50px;
+    text-align: center;
+   
+ }
+ #team-text i{
+    color: #00743f;
+    font-size: 30px;
+    padding: 15px;
+    border: 3px solid #00743f;
+    border-radius: 100px;
+ }
+
+ #team-text h2{
+    padding-top:15px ;
+    font-size: 15px;
+    font-family: "open sans";
+    font-weight: 700;
+    
+ }
+
+ #team-text p{
+    color: black;
+    font-size: 13px;
+    font-family: "open sans";
+    font-weight: 400;  
+}
+
+
+ .leaders .teamA:last-child{
+    margin-top: 50px;
+}
+
+/*other busniess*/
+.business{
+   
+    padding: 30px 60px;
+    text-align: justify;
+    margin: 70px 100px  0px ;
+    
+}
+
+.ceo{
+    text-align: justify;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+}
+
+.business h3{
+    color: #00743f;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Roboto";
+    font-weight: 700; 
+ }
+
+
+.busn{
+    padding: 30px 50px;
+}
+
+.busn h3{
+    color: #00743f;
+    padding-top:15px ;
+    margin-bottom: 0;
+    font-size: 20px;
+    font-family: "Roboto";
+    font-weight: 700; 
+    text-align: left;
+ }
+
+ .busn p{
+    line-height: 25px;
+    width: 400px;
+    color: black;
+    font-size: 13px;
+    font-family: "open sans";
+    font-weight: 400;  
+}
+
+/*info*/
+
+.info{
+    background-color: #323232 ;
+    display: flex;
+    padding: 15px 20px;
+}
+
+.info a{
+    text-decoration: none;
+    color:white;
+   margin: auto;
+}
+
+.info i{
+    background-color: white;
+    border-radius: 100px;
+    font-size:13px;
+    padding: 15px ;
+   
+}
+
+.info a h1{
+    font-family: "roboto";
+    font-weight: 700;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.info a p{
+    font-family: "open sans";
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.info a:hover{
+   color: #a8a8a8;
+}
+
+
+ form {
+    width:25% ;
+    display: flex;
+    justify-content: space-between;
+}
+
+ form input[type=text] {
+    width: 100%;
+    height: 40px;
+    padding: 1px 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    transition: 0.5s;
+    outline: none;
+  }
+
+  input[type=text]:focus {
+    border: 3px solid  #ccc;
+  }
+
+  .button{
+    width: 30%;
+    height: 40px;
+    background-color: #323232;
+    color: white;
+    padding: 10px 10px ;
+    text-transform: uppercase;
+    font-size: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: 700;
+  }
+
+/*footer
+
+.togo{
+    margin-top: 30px;
+    background-color: #323232;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 250px 0px 60px;
+}
+
+.end{
+    padding-top: 50px;
+}
+
+.end a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    font-family: "Roboto";
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.end a span{
+    font-weight: 700;
+}
+.loog img{
+    margin-top: 40px;
+    height: 50px;
+}
+
+footer p{
+    color: white;
+    background-color: #565656;
+    text-align: center; 
+    padding: 10px;
+    font-size: 15px;
+    font-family: "Roboto";
+    font-weight: 400;
+}
+
+*/

@@ -1,0 +1,356 @@
+@media (max-width: 767px) {
+
+    .menu{
+        display: none;
+    }
+    .Categories {
+      
+      padding: 10px;
+      height: auto;
+    }
+  
+    .logo img {
+      height: 40px;
+    }
+  
+    .menu i {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .nav {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+    }
+  
+    .nav ul li {
+      padding: 10px 0;
+    }
+  
+    .log {
+      align-items: center;
+    }
+  
+    .log a {
+      padding: 5px;
+    }
+  
+    .sublist {
+      position: static;
+      display: none;
+    }
+  
+    .nav ul li:hover .sublist {
+      display: none;
+    }
+  
+    .nav ul li:hover .sublist ul {
+      display: none;
+    }
+
+
+
+    .container {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0.0.0, 0.5)), url(./images/desktop.png);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 120vh;
+      }
+      
+      #bannertext h1 {
+        text-align: center;
+        padding: 50px 20px;
+        font-family: "Roboto";
+        font-size: 45px;
+        color: white;
+        font-weight: 700;
+        letter-spacing: 2px;
+      }
+      
+      #bannertext p {
+        margin: 0px 20px 70px 20px;
+        font-size: 13px;
+        font-weight: 400;
+        color: white;
+        font-family: "Open Sans";
+        text-align: center;
+      }
+      
+      form {
+        text-align: center;
+        font-weight: 600;
+        font-family: "open sans";
+      }
+      
+      .fatai {
+        width: 80%;
+        margin: auto;
+      }
+      
+      .fatai {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .fatai input[type="text"] {
+        width: 100%;
+        height: 40px;
+        padding: 12px 20px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        transition: 0.5s;
+        outline: none;
+      }
+      
+      input[type="text"]:focus {
+        border: 3px solid #ccc;
+      }
+      
+      label[for="shipment"] {
+        color: white;
+      }
+      
+      .button {
+        width: 60%;
+        height: 40px;
+        background-color: #00743f;
+        color: white;
+        padding: 10px 1px;
+        text-transform: uppercase;
+        font-size: 10px;
+        border: 1px solid #ccc;
+        cursor: pointer;
+      }
+      
+      .button:hover {
+        transition: 1s;
+        background-color: rgb(157, 157, 157);
+        opacity: 1px;
+      }
+      
+      
+        #bannertext h1 {
+          padding: 50px 20px 20px 20px;
+          font-size: 30px;
+        }
+      
+        #bannertext p {
+          margin: 0px 20px 30px 20px;
+          font-size: 11px;
+        }
+      
+        .fatai {
+          width: 90%;
+        }
+      
+        .button {
+          width: 100%;
+        }
+
+
+        .page-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2.5rem;
+            font-size: 15px;
+            padding: 50px 20px;
+          }
+          
+          .text1 {
+            width: 100%;
+            max-width: 300px;
+            background-color: #111;
+            padding: 20px;
+            border-radius: 8px;
+            transition: all 0.45s ease;
+            color: white;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+          }
+          
+          .text1 p {
+            padding: 10px 0px;
+            line-height: 18px;
+          }
+          
+          .text1 i {
+            font-size: 25px;
+            color: #00743f;
+          }
+          
+
+          .more-body{
+            flex-direction: column;
+           
+          }
+
+          #midtext{
+            background-color: #00743f;
+            padding: 50px 40px;
+            text-align: center;
+            
+          }
+
+
+          .item {
+            position: relative;
+            background-image: url(./images/Delivery_\ Illustration.jpeg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 65vh;
+            margin: 100px 20px;
+          }
+          
+          .item-child {
+            height: 65vh;
+            background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
+            padding: 50px;
+            width: 100%;
+            max-width: 400px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+          
+          .item-child h4 {
+            padding-bottom: 10px;
+            font-size: 25px;
+            text-transform: uppercase;
+            font-weight: 700;
+          }
+          
+          .item-child p {
+            font-size: 15px;
+            line-height: 25px;
+            text-align: justify;
+          }
+          
+          .case .item:nth-child(2) {
+            background-image: url(./images/img\ 5.jpeg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+          
+          .case .item:nth-child(2) .item-child {
+            position: absolute;
+            right: 0px;
+          }
+          
+          .case .item:nth-child(3) {
+            background-image: url(./images/download.jpeg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+          
+          .case .item:last-child {
+            background-image: url(./images/Efficiently\ Organizing\ a\ Warehouse\ for\ Easier\ Management.jpeg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+          
+          .case .item:last-child .item-child {
+            position: absolute;
+            right: 0px;
+          }
+          
+          .case .item:last-child h4 {
+            font-size: 24px;
+          }
+
+
+          .last {
+            background-color: #00743f;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+            
+          }
+          
+          .last img {
+            position: static;
+            margin-top: 40px;
+            max-width: 100%;
+            height: auto;
+          }
+          
+          #lastex {
+            width: 100%;
+            max-width: 6000px;
+            margin-top: 40px;
+            text-align: center;
+          }
+          
+          #lastex h4 {
+            color: white;
+            font-weight: 700;
+            font-size: 25px;
+            padding: 10px 0px 25px;
+          }
+          
+          #lastex p {
+            
+            color: white;
+            font-size: 15px;
+            line-height: 25px;
+            padding: 10px 0 30px;
+          }
+          
+          #lastex a {
+            font-weight: 700;
+            color: white;
+            background-color: black;
+            padding: 15px 30px;
+          }
+          
+          #lastex a:hover {
+            background-color: white;
+            color: black;
+            transition: 1s;
+            font-weight: 700;
+          }
+          
+
+          .togo {
+            display: block;
+            text-align: center;
+            padding: 20px;
+          }
+    
+          .loog img{
+            height: 40px;
+          }
+          
+          .end {
+           
+            padding-top: 20px;
+          }
+          
+          .end a {
+            
+            font-size: 10px;
+            line-height: 20px;
+          }
+          
+          footer p {
+            font-size: 12px;
+            padding: 5px;
+          }
+          
+         
+        }
+          
