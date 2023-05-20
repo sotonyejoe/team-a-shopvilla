@@ -1,0 +1,692 @@
+
+/*Heading, Navigation, and footer : [Roboto](https://fonts.google.com/specimen/Roboto)
+  * font weight: 400, 700*/
+
+  /*### Color
+
+#### Primary Color 
+* body: #f6f6f6
+* Card: #fefefe
+
+#### Accent
+* green: #00743F
+* Yellow: #F1A104
+* Red:    #dc143c
+* Blue: #92bbff
+* pink: #f29ec8*/
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); /* Roboto*/
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap'); /*'Open Sans', sans-serif;*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Open Sans', sans-serif;
+  }
+  :root {
+      /* font-family*/
+      --roboto: "Roboto", sans-serif;
+      --open-sans: "Open Sans", sans-serif;
+    
+      /*colors*/
+    
+      /*#### Primary Color */
+      --body: hsl(0, 0%, 96%);
+      --Card: hsl(0, 0%, 100%);
+    
+      /*#### Accent*/
+      --green: hsl(153, 100%, 23%);
+      --blackish-green: hsl(120, 89%, 7%);
+      --white: hsl(0, 0%, 100%);
+      --black: hsl(0, 0%, 0%);
+      --Yellow: hsl(40, 97%, 48%);
+      --Red: hsl(348, 83%, 47%);
+      --Blue: hsl(217, 100%, 79%);
+      --pink: hsl(330, 76%, 78%);
+    
+    
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: var(--open-sans);
+    }
+    body {
+      background-color: var(--body);
+      width: 100%;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-size: 1em;
+      line-height: 2rem;
+      color: var(--blackish-green);
+    }
+    p {
+      font-size: 1em;
+      color: var(--black);
+      margin: 1rem 0 2rem 0;
+    }
+    #nav-top{
+      background-color: var(--Yellow);
+      padding: 10px 15px;
+      box-shadow: 0 5px 15px hsla(0, 37%, 92%, 0.06);
+      z-index: 999;
+      position: sticky;
+      top: 0;
+      left: 0;
+    }
+    .nav-content{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      color: var(--white);
+    }
+    
+  #header{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 5px  20px;
+      background-color: var(--blackish-green);
+      box-shadow: 0 5px 15px hsla(0, 0%, 0%, 0.06);
+      z-index: 999;
+      position: sticky;
+      top: 0;
+      left: 0;
+    }
+    #navbar{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #navbar li{
+      list-style-type: none;
+      padding: 0 2rem;
+      position: relative;
+    }
+    #navbar li a {
+      text-decoration: none;
+      font-size: 0.8em;
+      font-weight: 700;
+      color: var(--white);
+      transition: 0.3s ease;
+    }
+    #navbar li a:hover,
+    #navbar li a.active{
+      color: var(--Yellow);
+    }
+    #navbar li a.active::after, 
+    #navbar li a:hover::after{
+      content: "";
+      width: 30%;
+      height: 2px;
+      background: var(--Yellow);
+      position: absolute;
+      bottom: -4px;
+      left: 20px;
+    }
+    #mobile{
+      display: none;
+    }
+    #close{
+      display: none;
+    }
+    
+
+body{
+    background-color:white;
+    font-family:'Open Sans', sans-serif;     
+}
+
+
+/*
+#logo img{
+    height: 200px;
+}
+
+.header{
+   width: 100%;
+   height: 70px;;
+   margin: auto;
+   padding: 0px 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color:#f29ec8;
+   top: 0;
+   z-index: 1;
+   position:sticky;
+}
+
+.navbar ul{
+    display:flex;
+    padding: 30px 20px 30px 20px;
+   
+   
+}
+
+.navbar ul li a{
+    font-family: "Roboto";
+    padding: 0px 20px ;
+    font-size: 13px;  
+    color:white;   
+    font-weight: 700;
+ }
+
+ .navbar ul li a:hover{
+    padding: 10px  20px;
+    color: black;
+    
+ }
+
+
+
+ #log ul{
+    display: flex;
+    padding: 0px 30px 0px 0px ;
+   
+ }
+ #log ul li a{
+    font-family: "Roboto";
+    padding: 10px;
+    font-size: 13px;  
+    color: white;   
+    font-weight: 700;
+ }
+
+ #login:hover{
+    color: black;
+    background-color: #f6f6f6;
+ }
+
+ #log ul li a:hover{
+    color: black;
+ }
+header*/
+
+
+ /*categories* */
+.Categories{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Roboto";
+    width: 100%;
+    height: 10vh;
+    padding: 0px 120px;
+    background-color:#023820;
+    top: 0;
+    z-index: 1;
+    position:sticky;
+}
+
+.menu i{
+    color: white;
+    font-size: 15px;
+    display: none;
+}
+
+
+
+.logo img{
+    height: 50px;
+}
+
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+}
+
+.nav ul{
+    display: flex;
+}
+
+.nav ul li{
+    padding: 0px 20px;
+    color: white;
+    font-family: "Roboto";
+    font-weight: 700;
+}
+
+.nav ul li a{
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+  
+}
+.nav ul li a:hover{
+    color:black;
+}
+
+
+.sublist{
+    display:none ;
+}
+
+.nav ul li:hover .sublist{ 
+    display:block;
+    position: absolute;
+    left: 90;
+    top:50px;
+    background-color:#00743f;
+}
+
+.nav ul li:hover .sublist ul{
+    display: block;
+  
+}
+
+.nav ul li:hover .sublist ul li{
+    width: 100%;
+    padding: 13px;
+}
+
+.nav ul li:hover .sublist ul li a{
+    color:white;
+    font-size: 13px;
+    font-weight: light;
+    text-align: center;
+}
+
+.nav ul li:hover .sublist ul li a:hover{
+    color: black;
+    font-weight: light;
+}
+
+
+.log {
+  display: flex;   
+}
+
+.log a{
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+    font-family: "Robotot";
+    font-weight: 700;
+}
+
+.log a:hover{
+    color: black;
+    
+}
+
+
+
+/* banner*/
+.container {
+    background-image: linear-gradient( rgba(0,0,0, 0.5), rgba(0.0.0, 0.5)), url(./images/desktop.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+
+}
+
+#bannertext h1{
+    text-align: center;
+    padding: 50px 100px 20px 100px;
+    font-family: "Roboto";
+    font-size: 45px;
+    color:white;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+#bannertext p{
+    font-size: 13px;
+    margin: 0px 200px 70px 200px;
+    font-weight: 400;
+    color: white;
+    font-family:"Open Sans";
+    text-align: center;
+}
+
+form{
+    text-align: center;
+    font-weight: 600;
+    font-family: "open sans";
+}
+
+.fatai{
+    width: 40%;
+    height:10vh;
+    margin:auto;
+}
+
+.fatai  {
+    width: 40%;
+    display: flex;
+    
+}
+
+
+.fatai input[type=text] {
+    width: 100%;
+    height: 40px;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    transition: 0.5s;
+    outline: none;
+  }
+
+  input[type=text]:focus {
+    border: 3px solid  #ccc;
+  }
+
+
+  label[for=shipment] {
+    color: white;
+    
+   }
+
+  
+  .button{
+    width: 20%;
+    height: 40px;
+    background-color:#00743f;
+    color: white;
+    padding: 10px 13px ;
+    text-transform: uppercase;
+    font-size: 10px;
+     border: 1px solid #ccc;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    transition: 1s;
+    background-color: rgb(157, 157, 157);
+    opacity: 1px;
+  }
+
+  /*card*/  
+
+.page-text{
+    display:flex;
+    justify-content: center;
+    gap: 2.5rem;
+    font-size: 15px;
+    padding: 50px 100px;
+   
+}
+
+.text1{
+    width: 200px;
+    background-color:#111;
+    padding: 20px 0px;
+    border-radius: 8px;
+    transition: all .45s ease;
+    color: white;  
+    font-size: 10px;
+    line-height: 20px;
+    transition: .45s;
+    text-align: center;
+   
+}
+
+.text1 p{
+   padding: 10px 20px;
+    line-height: 20px;
+    color: #ffff;
+}
+
+.text1 i{
+    font-size: 25px;
+    color:#ffff;
+}
+.text1 h4{
+    color: #fff;
+}
+
+  /*banner 2*/  
+
+  .more-body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    margin: 100px 150px;
+    padding: 30px;
+}
+
+.more-card{
+    transition: all .45s ease;
+    color: #ffff; 
+    line-height: 20px;
+    transition: .45s;
+    height: 490px;
+}
+
+  
+.more-card img{
+    height: 340px;
+    width: 320px;
+    border-radius: 10px;
+}
+
+.more-card h4{
+    font-size: 22px;
+    font-weight: 600;
+    padding: 20px 0;
+  }
+
+.more-card p{
+    font-size:15px ;
+    font-family: "open sans";
+    font-weight: 300;
+  }
+
+  #midtext{
+    background-color: #00743f;
+    padding: 50px 100px;
+    text-align: center;
+    
+    
+  }
+
+  #midtext h4{
+        padding: 15px 0px;
+        color: white;
+        font-size: 25px;
+        font-weight: 700;    
+  }
+
+  #midtext p{
+       color: white;
+       padding: 15px 0px;
+       font-size: 20px;
+
+  }
+
+  
+
+  .item{
+    position: relative;
+    background-image:url(./images/Delivery_\ Illustration.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:65vh;
+    margin: 100px 150px;
+}
+  
+.item-child{
+    height: 65vh;
+    background: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6));
+    padding: 50px;
+    width:400px; 
+    position: absolute;
+}
+
+
+.item-child h4{
+    padding-bottom: 10px;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.item-child p{
+    font-size: 15px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+
+.case .item:nth-child(2) {
+    background-image: url(./images/img\ 5.jpeg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  
+}
+
+.case .item:nth-child(2) .item-child{
+    position: absolute;
+    right: 0px;
+}
+
+
+.case .item:nth-child(3) {
+    background-image: url(./images/download.jpeg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  
+}
+
+
+.case .item:last-child{
+    background-image: url(./images/Efficiently\ Organizing\ a\ Warehouse\ for\ Easier\ Management.jpeg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.case .item:last-child .item-child{
+    position: absolute;
+    right: 0px;
+}
+
+.case .item:last-child h4{
+   font-size: 24px;    
+}
+
+/*last part */
+
+.last{
+    background-color: #00743f;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 130px 100px 130px 150px;
+    position: relative;
+}
+
+.last img{
+    position: absolute;
+    right: 90px;
+    top: 90px;
+    height:400px;
+}
+
+#lastex {
+   
+    width: 550px;
+    height: 300px;
+
+}
+
+#lastex h4{
+    color: white;
+    font-weight: 700;
+    font-size: 35px;
+    padding: 10px 0px 35px ;
+}
+
+#lastex p{
+    
+    color: white;
+    font-size: 15px;
+    line-height:25px;
+    padding: 10px 0px 80px ;
+}
+
+#lastex a{
+    font-weight: 700;
+    color:white;
+    background-color:black;
+    padding: 20px;
+}
+
+#lastex a:hover{
+    background-color: white;
+    color:black;
+    transition: 1s;
+    font-weight: 700;
+}
+
+
+
+.togo{
+    background-color: #323232;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 250px 0px 60px;
+}
+
+.loog img{
+    margin-top: 40px;
+    height: 50px;
+}
+
+.end{
+    padding-top: 50px;
+}
+
+.end a{
+    color: white;
+    font-size: 13px;
+    font-family: "Roboto";
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.end a span{
+    font-weight: 700;
+}
+
+footer p{
+    color: white;
+    background-color: #565656;
+    text-align: center; 
+    padding: 10px;
+    font-size: 15px;
+    font-family: "Roboto";
+    font-weight: 400;
+}
+

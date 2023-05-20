@@ -1,0 +1,682 @@
+:root {
+  /* font-family*/
+  --roboto: "Roboto", sans-serif;
+  --open-sans: "Open Sans", sans-serif;
+
+  /*colors*/
+
+  /*#### Primary Color */
+  --body: hsl(0, 0%, 96%);
+  --Card: hsl(0, 0%, 100%);
+
+  /*#### Accent*/
+  --green: hsl(153, 100%, 23%);
+  --blackish-green: hsl(120, 89%, 7%);
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --Yellow: hsl(40, 97%, 48%);
+  --Red: hsl(348, 83%, 47%);
+  --Blue: hsl(217, 100%, 79%);
+  --pink: hsl(330, 76%, 78%);
+
+
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--open-sans);
+}
+body {
+  background-color: var(--body);
+  width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1em;
+  line-height: 2rem;
+  color: var(--blackish-green);
+}
+p {
+  font-size: 1em;
+  color: var(--black);
+  margin: 1rem 0 2rem 0;
+}
+#nav-top{
+  background-color: var(--Yellow);
+  padding: 10px 15px;
+  box-shadow: 0 5px 15px hsla(0, 37%, 92%, 0.06);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+.nav-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: var(--white);
+}
+#header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px  20px;
+  background-color: var(--blackish-green);
+  box-shadow: 0 5px 15px hsla(0, 0%, 0%, 0.06);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+#navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#navbar li{
+  list-style-type: none;
+  padding: 0 2rem;
+  position: relative;
+}
+#navbar li a {
+  text-decoration: none;
+  font-size: 0.8em;
+  font-weight: 700;
+  color: var(--white);
+  transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active{
+  color: var(--Yellow);
+}
+#navbar li a.active::after, 
+#navbar li a:hover::after{
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: var(--Yellow);
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+#mobile{
+  display: none;
+}
+#close{
+  display: none;
+}
+
+#hero{
+  background-image: url(shopvillalogoimg/Hero12.jpg);
+  height: 90vh;
+  width: 100%;
+  background-position: top 10% left 40%;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+#hero h4{
+  padding-bottom: 15px;
+  font-size: 4em;
+  line-height: 4rem;
+}
+#hero h1{
+  color: var(--Yellow);
+  font-size: 3em;
+}
+#hero p{
+  font-size: 1em;
+  font-weight: 600;
+}
+#hero button {
+  background-image: url(shopvillalogoimg/button.png);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  color: var(--green);
+  font-size: 1em;
+  font-weight: 700;
+  border: 0;
+  padding: 14px 80px 14px 65px;
+}
+#features {
+  padding: 40px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: wrap;
+}
+#features .fe-box{
+  width: 180px;
+  text-align: center;
+  padding: 25px 15px;
+  box-shadow: 20px 20px 34px hsla(0, 0%, 0%, 0.03);
+  border: 1px solid var(--green);
+  border-radius: 4px;
+  margin: 15px 0;
+}
+#features .fe-box:hover{
+  box-shadow: 10px 10px 54px hsla(40, 97%, 48%, 0.01); 
+}
+#features .fe-box img{
+  width: 100%;
+  margin-bottom: 10px;
+}
+#features .fe-box h6{
+  display: inline-block;
+  padding: 9px 8px 6px 8px;
+  line-height: 1;
+  border-radius: 4px;
+  color: var(--blackish-green);
+  background-color: var(--Yellow);
+}
+#features .fe-box:nth-child(2) {
+  border: 1px solid var(--Yellow);
+}
+#features .fe-box:nth-child(4) {
+  border: 1px solid var(--Yellow);
+}
+#features .fe-box:nth-child(6) {
+  border: 1px solid var(--Yellow);
+}
+#features .fe-box:nth-child(2) h6{
+  color: var(--white);
+  background-color: var(--black);
+}
+#features .fe-box:nth-child(3) h6{
+  color: var(--Yellow);
+  background-color: var(--blackish-green);
+}
+#features .fe-box:nth-child(4) h6{
+  color: var(--Yellow);
+  background-color: var(--black);
+}
+#features .fe-box:nth-child(5) h6{
+  color: var(--white);
+  background-color: var(--green);
+}
+#features .fe-box:nth-child(6) h6{
+  color: var(--green);
+  background-color: var(--Yellow);
+}
+#products{
+  padding: 40px 80px;
+  text-align: center;
+}
+#products h2 {
+  font-size: 3em;
+  font-weight: 600;
+}
+#products p {
+  font-size: 1.5em;
+  font-weight: 600;
+  font-family: var(--open-sans);
+  line-height: 2;
+}
+#products .product-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  flex-wrap: wrap;
+}
+#products .pro {
+  position: relative; 
+  width: 23%;
+  min-width: 250px;
+  padding: 10px 12px;
+  border: 1px solid var(--blackish-green);
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px hsla(0, 0%, 0%, 0.02);
+  margin: 15px 0;
+  transition: 0.2s ease;
+}
+#products .pro:hover{
+  box-shadow: 20px 20px 30px hsla(0, 0%, 0%, 0.06);
+} 
+#products .pro img {
+  width: 100%;
+  border-radius: 20px;
+}
+#products .pro .description{
+  text-align: start;
+  padding: 10px 0;
+}
+#products .pro .description span {
+  color: var(--black);
+  font-size: 1em;
+  font-weight: 500;
+}
+#products .pro .description h5 {
+  padding-top: 7px;
+  color: var(--blackish-green);
+  font-size: 1.5em;
+}
+#products .pro .description i {
+  font-size: 0.6em;
+}
+#products .pro .description h4 {
+  padding-top: 7px;
+  font-size: 1em;
+  font-weight: 700;
+  color: var(--green);
+}
+#products .pro .shopping cart{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50px;
+  background-color: hsl(40, 97%, 48%);
+  font-weight: 500;
+}
+#banner{
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(shopvillalogoimg/banner5.jpg);
+  width: 100%;
+  height: 40vh;
+  background-size: contain;
+  background-position: center;
+}
+#banner h4 {
+  color: var(--white);
+  font-size: 2em;
+  font-family: var(--open-sans);
+}
+#banner h2 {
+  color: var(--white);
+  font-size: 1em;
+  padding: 10px 0;
+  font-style: oblique;
+}
+#banner h2 span {
+  color: var(--Yellow);
+}
+#banner button {
+  font-size: 1em;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: var(--white);
+  background-color: var(--Yellow);
+  border-radius: 4px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s ;
+}
+#banner button:hover {
+  background-color: var(--white);
+  color: var(--Yellow);
+}
+#sm-banner{
+  padding: 40px 80px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#sm-banner .banner-box {
+  margin: 40px 0;
+  padding: 10px 20px;
+  padding-top: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-image: url(shopvillalogoimg/Hero3.jpg);
+  min-width: 580px;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+}
+#sm-banner .banner-box h4{
+  color: var(--white);
+}
+#sm-banner .banner-box h2{
+  color: var(--Yellow);
+}
+#sm-banner .banner-box span{
+  color: var(--white);
+}
+#sm-banner .banner-box button{
+  color: var(--green);
+  padding: 10px 15px;
+  margin: 15px;
+  border: 1px solid var(--blackish-green);
+  border-radius: 6px;
+  background-color:  transparent;
+  font-size: 15px;
+  font-weight: 700; 
+}
+#sm-banner .banner-box .button2{
+  color: var(--Yellow);
+}
+#sm-banner .banner-box button:hover{
+  background-color: var(--green);
+  color: var(--white);
+}
+#sm-banner .banner-box .button2:hover{
+  background-color: var(--Yellow);
+  color: var(--white);
+}
+#sm-banner .banner-box2{
+  background-image: url(shopvillalogoimg/banner\ 6.jpg);
+}
+#newsletter{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-image: url(shopvillalogoimg/Hero8.jpg );
+  background-position: 20% 30%;
+  padding: 30px 20px;
+  margin-bottom: 50px;
+}
+#newsletter h4 {
+  font-size: 25px;
+  font-weight: 700;
+  color: var(--green);
+}
+#newsletter p {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--Yellow);
+  font-style: oblique;
+}
+#newsletter span {
+  font-size: 20px;
+  font-weight: bolder;
+  color: var(--green);
+}
+#newsletter .form{
+  display: flex;
+  width: 40%;
+}
+#newsletter input {
+  height: 3.125rem;
+  padding: 0 1.25em;
+  font-size: 15px;
+  width: 80%;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  outline: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+#newsletter button {
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: var(--Yellow);
+  color: var(--blackish-green);
+  white-space: no;
+  font-size: 15px;
+  font-weight: 500;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+footer{
+  padding: 40px 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .col{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+footer .logo{
+  margin-bottom: -50px;
+}
+footer h4 {
+  font-size: 15px;
+  padding-bottom: 20px;
+}
+footer p {
+  font-size: 14px;
+  margin: 0 0 8px 0;
+}
+footer a {
+  font-size: 14px;
+  color: var(--blackish-green);
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+footer .follow {
+  margin-top: 20px;
+}
+footer .follow i {
+  color: var(--green);
+  padding-right: 4px;
+  cursor: pointer;
+}
+footer .install .row img {
+  border: 1px solid var(--Yellow);
+  border-radius: 6px;
+}
+footer .install img {
+  margin: 10px 0 15px 0;
+}
+footer .follow i:hover, footer a:hover  {
+  color: var(--Yellow);
+}
+footer .copyright{
+  width: 100%;
+  text-align: center;
+}
+
+/*About style*/
+#page-header{
+  padding: 40px 80px;
+  text-align: center;
+}
+.about-header{
+  background-image: url(shopvillalogoimg/banner.png);
+}
+.about-header h2{
+  font-size: 3em;
+  font-weight: 700;
+  color: var(--white);
+}
+.about-header p{
+  font-size: 2em;
+  font-weight: 700;
+  color: var(--white);
+}
+#about-head{
+  padding: 40px 80px;
+  display: flex;
+  align-items: center;
+}
+#about-head h2{
+  font-size: 3em;
+  font-weight: 700;
+  color: var(--blackish-green)
+}
+#about-head p{
+  font-size: 1em;
+  font-weight: 700;
+  color: var(--blackish-green);
+  line-height: 2;
+}
+#about-head abbr{
+  font-size: 1em;
+  font-weight: 700;
+  color: var(--blackish-green);
+  line-height: 2;
+  text-decoration: underline;
+}
+#about-head img {
+  width: 50%;
+  height: auto;
+}
+#about-head div {
+  padding-left: 40px;
+}
+#about-app{
+  padding: 40px 80px;
+  text-align: center;
+}
+#about-app .video{
+  width: 70%;
+  height: 100%;
+  margin: 30px auto 0 auto;
+}
+#about-app .video video {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+
+@media (max-width: 799px) {
+  #nav-top{
+    display: none;
+  }
+  #navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: var(--green);
+    box-shadow: 0 40px 60px hsla(0, 0%, 0%, 0.1) ;
+    padding: 80px 0 0 10px;
+    transition: 0.3s;
+  }
+
+  #navbar .active{
+    right: 0;
+  }
+
+  #navbar li {
+    margin-bottom: 25px;
+  }
+  #mobile{
+    display: flex;
+    align-items: center;
+  }
+  #mobile i{
+    color: var(--Yellow);
+    font-size: 24px;
+    padding-left: 20px;
+  }
+  #close {
+    display: initial;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: var(--Yellow);
+    font-size: 24px;
+  }
+  #lg-bag{
+    display: none;
+  }
+  #hero{
+    height: 60vh;
+    padding: 0 70px;
+    background-position: top 30% right 30%;
+  }
+  #features {
+    justify-content: center;
+    padding: 40px 40px;
+  }
+  #features .fe-box{
+    margin: 15px 15px;
+  }
+  #products .product-container {
+    justify-content: center;
+  }
+  #products .pro {
+    margin: 15px ;
+  }
+  #banner {
+    height: 20vh;
+  } 
+  #sm-banner .banner-box {
+   min-width: 100%;
+   height: 30vh;
+  }
+  #sm-banner {
+    padding: 0 40px;
+  }
+  #newsletter .form {
+    width: 70%;
+  }
+  #about-head {
+    padding: 40px 40px;
+    flex-direction: column;
+    align-items: center;
+  }
+  #about-head img {
+    width: 80%;
+    height: auto;
+    margin-bottom: 30px;
+  } 
+}
+
+@media (max-width: 477px) {
+  #header {
+    padding: 3px 10px;  
+  }
+  #hero {
+    padding: 0 20px;
+    background-position: 25%;
+  }
+  #hero h4 {
+    font-size: 2em;
+    line-height: 2rem;
+  }
+  #hero h1 {
+    font-size: 2em;
+  }
+  #features {
+    justify-content: space-between;
+    padding: 20px;
+  }
+  #features .fe-box {
+    width: 155px;
+    margin: 0 0 15px 0;
+  }
+  #products h2 {
+    font-size: 1.5em;
+  }
+  #products p {
+    font-size: 1.2em;
+  }
+  #products .pro {
+    width: 100%;
+  }
+  #banner{
+    height: 40vh;
+  }
+  #sm-banner .banner-box { 
+    height: 50vh;
+  }
+  #sm-banner .banner-box2 {
+    margin-top: 10px;
+  }
+  #newsletter {
+    padding: 40px 20px; 
+  }
+  #newsletter .form {
+    width: 100%;
+  }
+}

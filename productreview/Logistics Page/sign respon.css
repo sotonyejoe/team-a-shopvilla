@@ -1,0 +1,53 @@
+@media (max-width: 767px) {
+    .container {
+      width: 100%;
+      border-radius: 0;
+    }
+  
+    .sign-up,
+    .sign-in {
+      position: static;
+      width: 100%;
+      opacity: 1;
+      z-index: auto;
+    }
+  
+    form {
+      padding: 0 20px;
+    }
+  
+    button {
+      padding: 10px 40px;
+      margin: 10px;
+      font-size: 10px;
+    }
+    
+    .container.right-panel-active .overlay-container {
+        display: none;
+    }
+
+    .container.right-panel-active .sign-in,
+    .container.right-panel-active .sign-up {
+        transform: translateX(0);
+        opacity: 1;
+        z-index: 5;
+    }
+
+    .overlay {
+        display: none;
+    }
+
+    .overlay-left,
+    .overlay-right {
+        position: relative;
+        width: 100%;
+        transform: translateX(0);
+    }
+
+    .social-container {
+        margin-top: 10px;
+    }
+
+
+
+    }
